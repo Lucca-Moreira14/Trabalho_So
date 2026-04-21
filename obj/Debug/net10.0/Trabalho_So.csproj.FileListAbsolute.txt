@@ -1,0 +1,14 @@
+/Users/lucca/Documents/Poo /Trabalho_So/bin/Debug/net10.0/Trabalho_So
+/Users/lucca/Documents/Poo /Trabalho_So/bin/Debug/net10.0/Trabalho_So.deps.json
+/Users/lucca/Documents/Poo /Trabalho_So/bin/Debug/net10.0/Trabalho_So.runtimeconfig.json
+/Users/lucca/Documents/Poo /Trabalho_So/bin/Debug/net10.0/Trabalho_So.dll
+/Users/lucca/Documents/Poo /Trabalho_So/bin/Debug/net10.0/Trabalho_So.pdb
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.AssemblyInfoInputs.cache
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.AssemblyInfo.cs
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.csproj.CoreCompileInputs.cache
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.dll
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/refint/Trabalho_So.dll
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.pdb
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/Trabalho_So.genruntimeconfig.cache
+/Users/lucca/Documents/Poo /Trabalho_So/obj/Debug/net10.0/ref/Trabalho_So.dll
