@@ -1,27 +1,27 @@
 # Algoritmo do Banqueiro (SO)
 
-Implementacao multithread do algoritmo do banqueiro (Banker's Algorithm), com 5 clientes e 3 tipos de recursos, usando C# e `Thread`.
+Implementação multithread do algoritmo do banqueiro (Banker's Algorithm), com 5 clientes e 3 tipos de recursos, usando C# e `Thread`.
 
 ## Integrante(s)
 
-- Nome 1 - Lucca Casarim Moreira - 877538
-- Nome 2 - Italo Henrique Beraldo -- 877488
+- Lucca Casarim Moreira - 877538
+- Italo Henrique Beraldo - 877488
 
 ## Requisitos
 
 - .NET SDK 8.0 ou superior
 
-## Compilacao
+## Compilação
 
-No diretorio do projeto:
+No diretório do projeto:
 
 ```bash
 dotnet build
 ```
 
-## Execucao
+## Execução
 
-Passe os recursos disponiveis na linha de comando (3 valores):
+Passe os recursos disponíveis na linha de comando (3 valores):
 
 ```bash
 dotnet run -- 10 5 7
@@ -29,36 +29,41 @@ dotnet run -- 10 5 7
 
 Exemplo:
 
-- Recurso A: 10 instancias
-- Recurso B: 5 instancias
-- Recurso C: 7 instancias
+- Recurso A: 10 instâncias
+- Recurso B: 5 instâncias
+- Recurso C: 7 instâncias
 
 ## Estruturas de dados
 
-- `available[m]`: recursos disponiveis
-- `maximum[n,m]`: demanda maxima de cada cliente
-- `allocation[n,m]`: recursos alocados
-- `need[n,m]`: necessidade restante (`maximum - allocation`)
+- `disponivel[m]`: recursos disponíveis
+- `maximo[n,m]`: demanda máxima de cada cliente
+- `alocacao[n,m]`: recursos alocados
+- `necessidade[n,m]`: necessidade restante (`maximo - alocacao`)
 
-## Concorrencia e sincronizacao
+Constantes usadas no código:
+
+- `NUMERO_DE_CLIENTES = 5`
+- `NUMERO_DE_RECURSOS = 3`
+
+Funções principais:
+
+- `SolicitarRecursos(int cliente, int[] solicitacao)`
+- `LiberarRecursos(int cliente, int[] liberacao)`
+- `EstadoSeguro()`
+
+## Concorrência e sincronização
 
 - Cada cliente executa em uma thread.
-- As operacoes de requisicao/liberacao usam `lock (mutex)` para evitar condicao de corrida.
-- Uma requisicao so e concedida se o sistema permanecer em estado seguro (`IsSafe()`).
+- As operações de requisição/liberação usam `lock (bloqueio)` para evitar condição de corrida.
+- Uma requisição só é concedida se o sistema permanecer em estado seguro (`EstadoSeguro()`).
 
 ## Arquivo principal
 
 - `Program.cs`
 
-## Organizacao do repositorio
+## Organização do repositório
 
-- `Program.cs`: implementacao do algoritmo do banqueiro.
-- `README.md`: instrucoes de compilacao e execucao.
-- `RELATORIO.md`: modelo base para gerar o relatorio em PDF.
+- `Program.cs`: implementação do algoritmo do banqueiro.
+- `README.md`: instruções de compilação e execução.
 
-## Checklist de entrega
 
-- Repositorio publico no GitHub com codigo e README.
-- Relatorio em PDF com: introducao, desenvolvimento, resultados e conclusao.
-- Link do repositorio incluido no relatorio.
-- Em caso de dupla, ambos devem enviar no Canvas.
